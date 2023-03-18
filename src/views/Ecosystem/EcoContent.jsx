@@ -4,7 +4,7 @@ import AnimateImage from '../../components/AnimateImage'
 import AnimateText from '../../components/AnimateText'
 import EcoBox from '../../templates/EcoBox'
 import { motion } from 'framer-motion'
-import { rewardList, whyList } from '../../utils/List'
+import { deathmatch, rewardList, whyList } from '../../utils/List'
 import DropDown from '../../components/DropDown'
 import { RiTeamFill } from 'react-icons/ri'
 import { FaPeopleCarry } from 'react-icons/fa'
@@ -334,16 +334,37 @@ const EcoContent = () => {
                                     <div className="mt-5 flex flex-col gap-y-6">
                                         {rewardList.map((items, i) => {
                                             return (
-                                                <div>
+                                                <div key={i}>
                                                     <div className="flex items-center gap-x-2">
-                                                        <div className={`w-2 h-[8px] shadow-md rounded-full`} style={{backgroundColor: `${items.color}`}}></div>
+                                                        <div className={`w-2 h-[8px] shadow-md rounded-full`} style={{ backgroundColor: `${items.color}` }}></div>
 
-                                                        <h1 className={`uppercase font-sans font-semibold text-md`}>{items.tier} Tier</h1>
+                                                        <h1 className={`uppercase font-semibold text-md`}>{items.tier} Tier</h1>
                                                     </div>
                                                     <p className='mt-2 opacity-70 ml-4'>{items.desc}</p>
                                                 </div>
                                             )
 
+                                        })}
+                                    </div>
+                                </DropDown>
+
+                                <DropDown title="WAPE Team Deathmatch Reward System">
+                                    <div className="mt-5 flex flex-col gap-y-7">
+                                        {deathmatch.map((items, i) => {
+                                            return (
+                                                <div key={i}>
+                                                    <div className="flex items-center gap-x-2">
+                                                        {items.icon}
+                                                        <h1 className="text-md font-semibold ">
+                                                            {items.reward}
+                                                        </h1>
+                                                    </div>
+
+                                                    <p className="ml-[22px]">
+                                                        Points: <span className='opacity-70'>{items.points}</span>
+                                                    </p>
+                                                </div>
+                                            )
                                         })}
                                     </div>
                                 </DropDown>

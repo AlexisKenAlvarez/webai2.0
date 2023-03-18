@@ -1,3 +1,7 @@
+import { RiKnifeFill } from 'react-icons/ri'
+import { GiHealthNormal, GiUnlitBomb, GiSkullCrack } from 'react-icons/gi'
+import { TbWindsock } from 'react-icons/tb'
+
 export const whyList = [
     'Increases usage and familiarity of the cryptocurrency: Creating a play-to-earn game can help get people acquainted with your cryptocurrency. This could lead to more people getting involved in trading or investing in the token, increasing its popularity.',
     'Rewards users for interaction and engagement with the currency: Users will have an incentive to stay engaged with the token by playing the game and earning rewards. This keeps users from getting bored or disinterested and leads to increased user growth in the crypto space.',
@@ -31,5 +35,45 @@ export const rewardList = [
         desc: 'The very top players—those that finish within 5% of first place—will receive Legendary tier rewards with 1,150XP and four gold bars to purchase exclusive products or services.',
         color: '#f86449'
     },
+
+]
+
+export const deathmatch = [
+    {
+        reward: 'Killing a player',
+        points: '20 XP',
+        icon: <>
+            <RiKnifeFill />
+        </>
+    },
+    {
+        reward: 'Reviving a teammate',
+        points: '10 XP',
+        icon: <>
+            <GiHealthNormal />
+        </>
+    },
+    {
+        reward: 'Placing a bomb',
+        points: '50 XP',
+        icon: <>
+            <GiUnlitBomb />
+        </>
+    },
+    {
+        reward: 'Suicide',
+        points: '-50 XP',
+        icon: <>
+            <GiSkullCrack/>
+        </>
+    },
+    {
+        reward: 'Winning team',
+        points: '100 XP',
+        icon: <>
+            <TbWindsock/>
+        </>
+    },
+
 
 ]
