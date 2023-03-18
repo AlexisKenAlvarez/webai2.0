@@ -4,7 +4,7 @@ import AnimateImage from '../../components/AnimateImage'
 import AnimateText from '../../components/AnimateText'
 import EcoBox from '../../templates/EcoBox'
 import { motion } from 'framer-motion'
-import { deathmatch, rewardList, whyList } from '../../utils/List'
+import { deathmatch, levels, rewardList, whyList } from '../../utils/List'
 import DropDown from '../../components/DropDown'
 import { RiTeamFill } from 'react-icons/ri'
 import { FaPeopleCarry } from 'react-icons/fa'
@@ -363,6 +363,26 @@ const EcoContent = () => {
                                                     <p className="ml-[22px]">
                                                         Points: <span className='opacity-70'>{items.points}</span>
                                                     </p>
+                                                </div>
+                                            )
+                                        })}
+                                    </div>
+                                </DropDown>
+
+                                <DropDown title="WAPE NFT Levels">
+                                    <div className="mt-5">
+                                        <div className="w-full flex p-3 border-[1px] border-black/10 font-semibold">
+                                            <h3 className="w-full">NFT Level</h3>
+                                            <h3 className="w-full">Number of NFTs</h3>
+                                            <h3 className="w-full">Sum of NFTs</h3>
+                                        </div>
+                                        {levels.map((items, i) => {
+                                            return (
+                                                <div className='flex w-full' key={i}>
+                                                    <h3 className="w-full border-[1px] border-black/10 p-3">{items.level}</h3>
+                                                    <h3 className="w-full border-[1px] border-black/10 p-3">{items.number}</h3>
+                                                    <h3 className="w-full border-[1px] border-black/10 p-3">{items.sum}</h3>
+
                                                 </div>
                                             )
                                         })}

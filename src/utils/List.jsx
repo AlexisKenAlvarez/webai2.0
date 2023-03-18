@@ -64,16 +64,50 @@ export const deathmatch = [
         reward: 'Suicide',
         points: '-50 XP',
         icon: <>
-            <GiSkullCrack/>
+            <GiSkullCrack />
         </>
     },
     {
         reward: 'Winning team',
         points: '100 XP',
         icon: <>
-            <TbWindsock/>
+            <TbWindsock />
         </>
     },
 
+
+]
+
+export const levels = [
+    {
+        level: '0',
+        number: '1',
+        sum: '1',
+    },
+    {
+        level: '1',
+        number: '2',
+        sum: '3',
+    },
+    {
+        level: '2',
+        number: '3',
+        sum: '6',
+    },
+    {
+        level: '3',
+        number: '4',
+        sum: '10',
+    },
+    {
+        level: '4',
+        number: '5',
+        sum: '15',
+    },
+    {
+        level: '5',
+        number: '6',
+        sum: '21',
+    },
 
 ]
