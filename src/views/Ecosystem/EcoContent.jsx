@@ -1,7 +1,13 @@
 import React from 'react'
 import AnimateDesc from '../../components/AnimateDesc'
+import AnimateImage from '../../components/AnimateImage'
 import AnimateText from '../../components/AnimateText'
 import EcoBox from '../../templates/EcoBox'
+import { motion } from 'framer-motion'
+import { rewardList, whyList } from '../../utils/List'
+import DropDown from '../../components/DropDown'
+import { RiTeamFill } from 'react-icons/ri'
+import { FaPeopleCarry } from 'react-icons/fa'
 
 const EcoContent = () => {
     return (
@@ -13,7 +19,7 @@ const EcoContent = () => {
                         <div className="w-full h-full mt-10 flex relative">
                             <div className="relative z-10 text-center lg:text-left w-fit mx-auto lg:mx-0">
                                 <AnimateText>
-                                    <h3 className='font-poppins font-medium text-pongkan'>CREATE</h3>
+                                    <h3 className=' font-medium text-pongkan'>CREATE</h3>
                                     <h1 className='font-asap font-bold text-4xl text-myblack'>WEBSITE CREATOR</h1>
                                 </AnimateText>
 
@@ -24,15 +30,18 @@ const EcoContent = () => {
                                 </AnimateDesc>
 
                             </div>
-                            <img src="/ecosystem/creator.webp" alt="Creator" className="absolute top-0 right-0 lg:block hidden w-[27rem]" />
+
+                            <AnimateImage src="creator" className="absolute top-0 right-0 lg:block hidden w-[27rem]" />
+
                         </div>
 
                     </EcoBox>
 
                     {/* STAKING */}
                     <EcoBox>
-                        <div className="w-full h-full mt-10 flex relative font-poppins">
-                            <img src="/ecosystem/staking.webp" alt="staking" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
+                        <div className="w-full h-full mt-10 flex relative ">
+
+                            <AnimateImage src="staking" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -47,7 +56,7 @@ const EcoContent = () => {
                                 </AnimateDesc>
 
                                 <AnimateDesc>
-                                    <h3 className='font-poppins font-medium text-pongkan mt-10'>STAKING POOLS</h3>
+                                    <h3 className=' font-medium text-pongkan mt-10'>STAKING POOLS</h3>
 
                                     <div className=" mt-3 flex flex-col gap-y-5 opacity-70">
                                         <p className="">
@@ -79,7 +88,7 @@ const EcoContent = () => {
                         <div className="w-full h-full mt-10 flex relative">
                             <div className="relative z-10 text-center lg:text-left w-fit mx-auto lg:mx-0">
                                 <AnimateText>
-                                    <h3 className='font-poppins font-medium text-pongkan'>WRITE</h3>
+                                    <h3 className=' font-medium text-pongkan'>WRITE</h3>
                                     <h1 className='font-asap font-bold text-4xl text-myblack'>ESSAY WRITER</h1>
                                 </AnimateText>
 
@@ -97,15 +106,15 @@ const EcoContent = () => {
 
 
                             </div>
-                            <img src="/ecosystem/writer.webp" alt="Creator" className="absolute -top-10 -right-10 lg:block hidden w-[30rem]" />
+                            <AnimateImage src="writer" className="absolute -top-10 -right-10 lg:block hidden w-[30rem]" />
                         </div>
 
                     </EcoBox>
 
                     {/* WEBAI NFTS */}
                     <EcoBox>
-                        <div className="w-full h-full mt-10 flex relative font-poppins">
-                            <img src="/ecosystem/samurai.webp" alt="staking" className="absolute -bottom-20 -left-20 lg:block hidden w-[27rem]" />
+                        <div className="w-full h-full mt-10 flex relative ">
+                            <AnimateImage src="samurai" className="absolute -bottom-20 -left-20 lg:block hidden w-[27rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -146,8 +155,8 @@ const EcoContent = () => {
                     </EcoBox>
                 </div>
 
-                <div className="bg-[#ECECEC] w-full max-w-[1200px] mx-auto py-10 h-auto relative z-10 mt-8 md:px-20 px-9 font-poppins pb-16">
-                    <img src="/ecosystem/cube.webp" alt="Cube" className="absolute top-10 bottom-0 my-auto right-20 w-[20rem] lg:block hidden" />
+                <div className="bg-[#ECECEC] w-full max-w-[1200px] mx-auto py-10 h-auto relative z-10 mt-8 md:px-20 px-9  pb-16">
+                    <AnimateImage src="cube" className="absolute top-10 bottom-0 my-auto right-20 w-[20rem] lg:block hidden" />
                     <div className="relative z-10 lg:text-left text-center mx-auto lg:mx-0">
                         <div className="text-center w-fit mx-auto">
                             <AnimateText>
@@ -180,8 +189,8 @@ const EcoContent = () => {
                 <div className="flex flex-col gap-y-20 mt-20">
                     {/* SWAP */}
                     <EcoBox>
-                        <div className="w-full h-full mt-10 flex relative font-poppins">
-                            <img src="/ecosystem/swap.webp" alt="swap" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
+                        <div className="w-full h-full mt-10 flex relative ">
+                            <AnimateImage src="swap" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -209,8 +218,135 @@ const EcoContent = () => {
                                         </p>
                                     </div>
                                 </AnimateDesc>
+                            </div>
+                        </div>
 
+                    </EcoBox>
 
+                    <EcoBox>
+                        <div className="w-full pt-14 h-full">
+                            <div className="w-full h-full flex relative">
+                                <div className="relative z-10 text-center lg:text-left w-fit mx-auto lg:mx-0">
+                                    <AnimateText>
+                                        <h3 className=' font-medium text-pongkan'>GAME</h3>
+                                        <h1 className='font-asap font-bold text-4xl text-myblack'>WEBAI GAME WAPE</h1>
+                                    </AnimateText>
+
+                                    <AnimateDesc>
+                                        <div className="max-w-[35rem] mt-7 flex flex-col gap-y-5 opacity-70">
+                                            <p className="">
+                                                WAPE is a blockchain based 3D play to earn game combining aspects of DeFi with NFTs and virtual-real world interactions using AR technology. A sustainable revenue generating game built for all player types.
+                                            </p>
+                                        </div>
+                                    </AnimateDesc>
+
+                                </div>
+                                <AnimateImage src="game" className="absolute -top-16 -right-10 lg:block hidden w-[23rem]" />
+                            </div>
+
+                            <div className="mt-24 flex flex-col gap-y-4">
+                                <DropDown title="Why are we creating a game?">
+                                    <p className="opacity-70">
+                                        The gaming industry is reported to generate more than $91 billion in global revenue in 2017 and is expected to surpass the mark set by the movie and music industries combined. This figure could grow to an estimated $118 billion by 2020, driven largely by mobile and online gaming. The potential for growth in this market segment alone continues to remain strong given that mobile gaming on smartphones or tablets is much less costly, and therefore more accessible, than console gaming. Additionally, other emerging technologies such as augmented reality &#40;AR&#41; and virtual reality &#40;VR&#41; are predicted to have an even greater impact on the industry in the years ahead, meaning producing even higher revenue totals.
+                                    </p>
+
+                                    <h3 className='mt-5'>Reasons why we are integrating a play 2 earn game to Web AI ecosystem are the following:</h3>
+
+                                    <ol className='mt-5 flex flex-col gap-y-5 opacity-70'>
+                                        {whyList.map((items, i) => {
+                                            return (
+                                                <li key={i}>{i + 1}.&#41;  {items}</li>
+                                            )
+                                        })}
+                                    </ol>
+                                </DropDown>
+
+                                <DropDown title="Why WAPE is worth it?">
+                                    <div className="flex flex-col gap-y-5 mt-5 opacity-70">
+                                        Blockchain games have been failing due to a lack of understanding in regards to the market, poor game design, slow transactions on the blockchain and a decrease in interest from players and game developers. These obstacles are primarily due to the fact that blockchain games have never been viable outside of speculation, with no proof that they can be made profitable while maintaining user growth and engagement.
+
+                                        <p className="">
+                                            Web AI Play 2 Earn Game is better because it is based around artificial intelligence &#40;AI&#41;, allowing players to more seamlessly interact with their environment and each other, making it more engaging than traditional blockchain-based games. It also allows for faster transaction times without sacrificing security or integrity, supporting cryptocurrencies as well as existing payment systems such as Apple Pay or PayPal. The system also supports advanced analytics that can help improve player experience based on data like popular trends and playstyles, bringing a new level of insight into how players engage with games. Moreover, Web AI Play 2 Earn Game models itself after established gaming platforms like Steam or Xbox Live instead of existing blockchain ecosystems, simplifying the learning curve for developers when compared to building an entirely new platform from scratch.
+
+                                        </p>
+
+                                        <p className="">
+                                            Web AI Play 2 Earn is a platform that enables users to access and benefit from blockchain games without the requirement of owning any cryptocurrency or virtual assets. This platform allows users to connect their accounts with web-based games and then use AI-powered algorithms to make predictions on the performance of those games. These predictions help users to assess accuracy in order to increase their chances of earning rewards as they play.
+                                        </p>
+
+                                        <p className="">
+                                            When users confidently make correct predictions, they earn rewards and benefits such as tokens, coins, or in-game items. Web AI Play 2 Earn also allows users to earn rewards by predicting other blockchain games; these options include popular skill-based and luck-based blockchain games like Dream Team Fantasy Football, Casino Chaos, and Crypto Colony. By leveraging Web AI Play 2 Earn, game developers can also create unique gaming experiences for their players using tokenized and decentralized gamification features—whereby players can gain more rewards during gameplay.
+                                        </p>
+                                    </div>
+
+                                </DropDown>
+
+                                <DropDown title="WAPE Gamemodes">
+                                    <div className="flex flex-col mt-5 gap-y-9">
+                                        <div className="">
+                                            <div className="flex items-center gap-x-2">
+                                                <RiTeamFill />
+
+                                                <h3 className='font-asap font-bold text-md'>TEAM DEATHMATCH</h3>
+
+                                            </div>
+
+                                            <p className="opacity-70 mt-3">
+                                                Team Deathmatch &#40;TDM&#41; is a popular competitive game mode in the online shooter game, WAPE. Players join one of two teams, each with their own unique objectives. The aim is to eliminate all opponents from the other team within the allotted time limit and gain points for each kill. To win a match, team must reach a set point total before the opposing team does so. With intense firefights, tactical decisions and nerves of steel, TDM provides an especially satisfying experience for WAPE players.
+                                            </p>
+                                        </div>
+
+                                        <div className="">
+                                            <div className="flex items-center gap-x-2">
+                                                <FaPeopleCarry />
+
+                                                <h3 className="font-asap font-bold text-md">BATTLE ROYALE</h3>
+                                            </div>
+                                            <p className="opacity-70 mt-3">
+                                                Battle Royale is a popular game mode in WAPE , first-person shooter set in a hostile environment where players must survive against the other pilots in order to win. Battle Royale pits you against up to 250 other heroes, all but one of whom has the same goal: Survival. As the match progresses, the map shrinks due to an ever-approaching circle of death known as "The Storm". Whoever remains inside the Storm area when it closes is eliminated from the game. In addition to eliminating opponents, players must also scavenge for weapons and resources scattered throughout the Battle Royale map in order to survive. The last pilot standing wins!
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </DropDown>
+
+                                <DropDown title="WAPE Revenue Model">
+                                    <div className="mt-5 opacity-70 flex flex-col gap-y-5">
+                                        <p className="">
+                                            WAPE, a popular online collectible card game, is looking to increase revenues with an innovative NFT integration and breeding model. In this model, WAPE combines non-fungible tokens &#40;NFTs&#41; with traditional card game mechanics, allowing players to own rare cards associated with their collection which can be used to create unique breeding or gameplay combinations.
+                                        </p>
+
+                                        <p className="">
+                                            NFTs allow gamers to acquire a digital asset that is solely owned by them and stored securely on the blockchain. This asset is then recorded and stored in the network’s public ledger for all players to view. By including NFTs as part of the game mechanics, WAPE allows players to use these assets as part of their gaming experience, paying for cards with real world money or through trading on the open market.
+                                        </p>
+
+                                        <p className="">
+                                            Players can also breed their cards in WAPE; creating new combinations from existing cards by spending a set Breeding Fee. These newly created cards will have special attributes that no other card has, giving them uniqueness and value that can appreciated in-game or exchanged outside of it. Players may then redeem the cards themselves using the Breeding Fee they paid initially or sell them on an online marketplace like OpenSea or one of the top CEXs. These sales result in profits earned when each transaction is completed successfully.
+                                        </p>
+
+                                        <p className="">
+                                            The combination of NFT integration and breeding gives WAPE unprecedented opportunities for monetization compared to more traditional card games. By purchasing rare NFTs within the game and adding player-generated content from breeding, it creates a marketable product that can easily be traded off platform for further economic opportunity for its users. With millions of people playing digitally today, attracting solid revenue streams through this type of model could not only make WAPE an industry leader but also provide users with an engaging way to earn some money while playing!
+                                        </p>
+                                    </div>
+                                </DropDown>
+
+                                <DropDown title="WAPE Battle Royal Reward System">
+                                    <div className="mt-5 flex flex-col gap-y-6">
+                                        {rewardList.map((items, i) => {
+                                            return (
+                                                <div>
+                                                    <div className="flex items-center gap-x-2">
+                                                        <div className={`w-2 h-[8px] shadow-md rounded-full`} style={{backgroundColor: `${items.color}`}}></div>
+
+                                                        <h1 className={`uppercase font-sans font-semibold text-md`}>{items.tier} Tier</h1>
+                                                    </div>
+                                                    <p className='mt-2 opacity-70 ml-4'>{items.desc}</p>
+                                                </div>
+                                            )
+
+                                        })}
+                                    </div>
+                                </DropDown>
 
                             </div>
                         </div>

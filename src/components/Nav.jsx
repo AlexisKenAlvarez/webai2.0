@@ -61,14 +61,14 @@ const Nav = () => {
 
 
     return (
-        <nav className='flex items-center p-3 px-6 lg:justify-between left-0 top-0 w-full z-[30] fixed'>
+        <nav className='flex items-center p-3 px-6 lg:justify-between left-0 top-0 w-full z-[30] fixed pointer-events-none'>
             <AnimatePresence>
                 {navActive ? <NavMobile close={close} key="NavMobile" /> : null}
             </AnimatePresence>
-            <img src="/logo.webp" alt="Logo" className="w-20 cursor-pointer" />
+            <img src="/logo.webp" alt="Logo" className="w-20 cursor-pointer pointer-events-auto" />
 
             <div className="">
-                <ul className="hidden uppercase font-ginger gap-x-9 text-sm lg:flex">
+                <ul className="hidden uppercase font-ginger gap-x-9 text-sm lg:flex pointer-events-auto">
                     <AnimatePresence mode="sync">
                         {navList.map((items, i) => {
                             return (
@@ -94,7 +94,7 @@ const Nav = () => {
 
                 </ul>
             </div>
-            <a href="" target="_blank" rel="noopener noreferrer" className="">
+            <a href="" target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
                 <button className="bg-myblack text-white rounded-md h-11 w-[10rem] justify-center font-ginger lg:text-sm text-xs justify-self-start ml-4 lg:ml-0 flex items-center gap-x-3 transition-all ease-in-out duration-300" style={scroll >= 100 ? { width: "4rem" } : {}}>
                     <p style={scroll >= 100 ? { opacity: 0, display: "none" } : {}} className="min-w-[5.4rem]">BUY TOKEN</p>
                     <GiToken className='text-xl' />
