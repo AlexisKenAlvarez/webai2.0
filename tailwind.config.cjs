@@ -15,7 +15,11 @@ module.exports = {
       colors: {
         mywhite: '#F4F4F4',
         myblack: '#28292A',
-        pongkan: '#f86449'
+        pongkan: '#f86449',
+        secondarybg: '#F3F7F6'
+      },
+      dropShadow: {
+        whiteShad: '0px 0px 8px #ffffff'
       }
     },
   },

@@ -31,7 +31,7 @@ const EcoContent = () => {
 
                             </div>
 
-                            <AnimateImage src="creator" className="absolute top-0 right-0 lg:block hidden w-[27rem]" />
+                            <AnimateImage src="ecosystem/creator" className="absolute top-0 right-0 lg:block hidden w-[27rem]" />
 
                         </div>
 
@@ -41,7 +41,7 @@ const EcoContent = () => {
                     <EcoBox>
                         <div className="w-full h-full mt-10 flex relative ">
 
-                            <AnimateImage src="staking" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
+                            <AnimateImage src="ecosystem/staking" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -106,7 +106,7 @@ const EcoContent = () => {
 
 
                             </div>
-                            <AnimateImage src="writer" className="absolute -top-10 -right-10 lg:block hidden w-[30rem]" />
+                            <AnimateImage src="ecosystem/writer" className="absolute -top-10 -right-10 lg:block hidden w-[30rem]" />
                         </div>
 
                     </EcoBox>
@@ -114,7 +114,7 @@ const EcoContent = () => {
                     {/* WEBAI NFTS */}
                     <EcoBox>
                         <div className="w-full h-full mt-10 flex relative ">
-                            <AnimateImage src="samurai" className="absolute -bottom-20 -left-20 lg:block hidden w-[27rem]" />
+                            <AnimateImage src="ecosystem/samurai" className="absolute -bottom-20 -left-20 lg:block hidden w-[27rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -156,7 +156,7 @@ const EcoContent = () => {
                 </div>
 
                 <div className="bg-[#ECECEC] w-full max-w-[1200px] mx-auto py-10 h-auto relative z-10 mt-8 md:px-20 px-9  pb-16">
-                    <AnimateImage src="cube" className="absolute top-10 bottom-0 my-auto right-20 w-[20rem] lg:block hidden" />
+                    <AnimateImage src="ecosystem/cube" className="absolute top-10 bottom-0 my-auto right-20 w-[20rem] lg:block hidden" />
                     <div className="relative z-10 lg:text-left text-center mx-auto lg:mx-0">
                         <div className="text-center w-fit mx-auto">
                             <AnimateText>
@@ -190,7 +190,7 @@ const EcoContent = () => {
                     {/* SWAP */}
                     <EcoBox>
                         <div className="w-full h-full mt-10 flex relative ">
-                            <AnimateImage src="swap" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
+                            <AnimateImage src="ecosystem/swap" className="absolute top-0 left-0 lg:block hidden w-[22rem]" />
 
                             <div className="relative z-10 text-center lg:text-right w-fit mx-auto lg:mr-0">
                                 <AnimateText>
@@ -241,7 +241,7 @@ const EcoContent = () => {
                                     </AnimateDesc>
 
                                 </div>
-                                <AnimateImage src="game" className="absolute -top-16 -right-10 lg:block hidden w-[23rem]" />
+                                <AnimateImage src="ecosystem/game" className="absolute -top-16 -right-10 lg:block hidden w-[23rem]" />
                             </div>
 
                             <div className="mt-24 flex flex-col gap-y-4">
@@ -336,14 +336,13 @@ const EcoContent = () => {
                                             return (
                                                 <div key={i}>
                                                     <div className="flex items-center gap-x-2">
-                                                        <div className={`w-2 h-[8px] shadow-md rounded-full`} style={{ backgroundColor: `${items.color}` }}></div>
+                                                        <div className={`w-2 h-[8px] shadow-md rounded-full`} style={{ backgroundColor: `${items.color}`, boxShadow: `0px 0px 20px 1px ${items.color}` }}></div>
 
                                                         <h1 className={`uppercase font-semibold text-md`}>{items.tier} Tier</h1>
                                                     </div>
                                                     <p className='mt-2 opacity-70 ml-4'>{items.desc}</p>
                                                 </div>
                                             )
-
                                         })}
                                     </div>
                                 </DropDown>

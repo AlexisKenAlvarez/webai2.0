@@ -53,9 +53,7 @@ const RoadHero = () => {
     const arr = word.split("")
 
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className='w-full h-screen bg-[#F3F7F6] relative'>
-            <Particle />
-
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className='w-full h-screen relative'>
             <AnimatePresence>
                 {scrollPosition <= 170 ?
                     <motion.div exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="relative z-10 h-full w-full transition-opacity duration-500 ease-in-out" key="mainDiv">

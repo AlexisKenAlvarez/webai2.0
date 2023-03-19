@@ -10,7 +10,7 @@ const DropDown = (props) => {
     }
 
     return (
-        <motion.div initial={{opacity: 0}} whileInView={{opacity: 1, y: [20, 0]}} transition={{duraiton: 0.7, delay: 0.2}} className="select-none">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1, y: [20, 0] }} transition={{ duraiton: 0.7, delay: 0.2 }} className="select-none">
             <div className='w-full bg-[#D7D7D7] hover:bg-[#dfdfdf] transition-color ease-in-out duration-300 h-20 cursor-pointer justify-between items-center flex p-7 shadow-md group' onClick={handleToggle}>
                 <h1 className={`font-asap font-semibold opacity-70 group-hover:text-pongkan transition-all ease-in-out duration-300 ${toggle ? "text-pongkan" : ""}`}>{props.title}</h1>
                 <div className="sm:block hidden w-7 h-7 opacity-70 relative transition-all ease-in-out duration-300" style={toggle ? { transform: "rotate(270deg)" } : {}}>

@@ -111,3 +111,98 @@ export const levels = [
     },
 
 ]
+
+export const febList = [
+    {
+        label: 'Creaton of Web AI idea with the main concept.',
+        done: true
+    },
+    {
+        label: 'Development of website, whitepaper and its ecosystem of WebAI.',
+        done: true
+    },
+    {
+        label: 'Seed sale by team of Web AI token.',
+        done: true
+    },
+    {
+        label: 'Start of making socials for Web AI.',
+        done: true
+    },
+    {
+        label: 'Development of the main ecosystem components.',
+        done: false
+    },
+    {
+        label: 'Competitions and giveaways for community building and engagement.',
+        done: false
+    },
+    {
+        label: '$WEBAI token fairlaunch on Pinksale platform.',
+        done: true
+    },
+    {
+        label: 'Preparation of high tier CEX listing.',
+        done: true
+    },
+    {
+        label: 'Conducting main listings for $WEBAI token.',
+        done: true
+    },
+    {
+        label: 'Partnerships',
+        done: false
+    },
+    {
+        label: 'Start of listing Web AI SWAP on CMC',
+        done: false
+    },
+    {
+        label: 'Launch of $WEBAI token on Pancakeswap and CEX',
+        done: true
+    },
+]
+
+export const marchList = [
+    {
+        label: 'Development of Web AI NFTs',
+        done: false
+    },
+    {
+        label: 'Massive trending campaings',
+        done: false
+    },
+    {
+        label: 'Web AI NFTs listing on one of the biggest exchanges',
+        done: false
+    },
+    {
+        label: 'Development of unique WebAI NFT staking pool',
+        done: false
+    },
+    {
+        label: 'Competition of NFT Whitelist spots',
+        done: false
+    },
+    {
+        label: 'Web AI NFTs listing on Opensea',
+        done: false
+    },
+    {
+        label: 'Minting of Web AI NFTs',
+        done: false
+    },
+    {
+        label: 'Initial development of Web AI play 2 earn game WAPE',
+        done: false
+    },
+    {
+        label: 'Development of Web AI NFTs minting DAPP',
+        done: false
+    },
+    {
+        label: 'Further partnerships',
+        done: false
+    },
+    
+]

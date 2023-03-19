@@ -7,7 +7,7 @@ import Ecosystem from './pages/Ecosystem';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Tokenomics from './pages/Tokenomics';
-import Roadmap from './components/Roadmap';
+import Roadmap from './pages/Roadmap';
 
 const App = () => {
   const location = useLocation()

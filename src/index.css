@@ -6,6 +6,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.holo {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+}
+
+.text-shad {
+    text-shadow: 2px 2px #000000;
+}
+
+.glass {
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0px 40px 7px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glassPartner {
+    /* box-shadow: 0 0px 40px 7px rgba(255, 255, 255, 0.37); */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
 ::-webkit-scrollbar {
     width: 11px;
     height: 8px;

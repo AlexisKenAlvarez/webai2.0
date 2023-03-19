@@ -78,7 +78,7 @@ const Nav = () => {
                                         animate={{ y: [-100, 0], opacity: 100 }}
                                         transition={{ duration: 0.5, delay: i * 0.2 }}
                                         exit={{ opacity: 0 }}
-                                        onClick={() => {handleNavigate(items.slug)}}
+                                        onClick={() => { handleNavigate(items.slug) }}
                                         style={location.pathname === items.slug ? { color: "#f86449" } : {}}
                                     >
 
@@ -101,7 +101,7 @@ const Nav = () => {
                 </button>
             </a>
 
-            <GiHamburgerMenu className='lg:hidden text-3xl ml-auto' onClick={open} />
+            <GiHamburgerMenu className='lg:hidden text-3xl ml-auto drop-shadow-whiteShad ' onClick={open} />
 
         </nav >
     )
