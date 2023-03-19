@@ -27,6 +27,10 @@ const Nav = () => {
             slug: '/tokenomics'
         },
         {
+            label: 'P2E Game Deck',
+            slug: "/deck"
+        },
+        {
             label: 'roadmap',
             slug: '/roadmap'
         },

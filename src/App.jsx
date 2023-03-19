@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Tokenomics from './pages/Tokenomics';
 import Roadmap from './pages/Roadmap';
+import Deck from './pages/Deck';
 
 const App = () => {
   const location = useLocation()
@@ -17,9 +18,10 @@ const App = () => {
       <Nav />
       <div className="font-poppins">
         <AnimatePresence mode="wait">
-          <Routes key={location.pathname}  location={location}>
-            <Route path="/"  element={<Intro />}></Route>
+          <Routes key={location.pathname} location={location}>
+            <Route path="/" element={<Intro />}></Route>
             <Route path="/ecosystem" element={<Ecosystem />}></Route>
+            <Route path="/deck" element={<Deck />}></Route>
             <Route path="/tokenomics" element={<Tokenomics />}></Route>
             <Route path="/roadmap" element={<Roadmap />}></Route>
 
