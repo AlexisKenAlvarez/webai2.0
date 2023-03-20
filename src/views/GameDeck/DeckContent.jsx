@@ -49,8 +49,8 @@ const DeckContent = () => {
 
     return (
         <section className="w-full min-h-screen h-auto bg-secondarybg relative py-20 overflow-hidden">
-            <motion.img animate={{rotate: 360, y: [0, 100, 0]}} transition={{duration: 19, repeat: Infinity, ease: "linear"}} src="/deck/console.webp" alt="console" className="absolute 2xl:w-[18rem] w-[14rem] top-[20rem] left-20 lg:block hidden drop-shadow-lg" />
-            <motion.img animate={{rotate: 360, y: [0, 100, 0]}} transition={{duration: 18, repeat: Infinity, ease: "linear"}} src="/deck/nintendo.webp" alt="switch" className="absolute 2xl:w-[14rem] w-[10rem] top-[20rem] right-40 lg:block hidden drop-shadow-lg" />
+            <motion.img animate={{ rotate: 360, y: [0, 100, 0] }} transition={{ duration: 19, repeat: Infinity, ease: "linear" }} src="/deck/console.webp" alt="console" className="absolute 2xl:w-[18rem] w-[14rem] top-[20rem] left-20 lg:block hidden drop-shadow-lg" />
+            <motion.img animate={{ rotate: 360, y: [0, 100, 0] }} transition={{ duration: 18, repeat: Infinity, ease: "linear" }} src="/deck/nintendo.webp" alt="switch" className="absolute 2xl:w-[14rem] w-[10rem] top-[20rem] right-40 lg:block hidden drop-shadow-lg" />
 
             <div className="w-full bg-secondarybg h-full text-center px-2">
                 <AnimateText>
@@ -72,6 +72,11 @@ const DeckContent = () => {
                         })}
                     </Slider>
 
+                    <a href="" target="_blank" rel="noopener noreferrer" className="">
+                        <button className="bg-myblack text-white rounded-md mx-auto px-7 py-4 h-fit w-fit mt-16 justify-center font-ginger flex items-center gap-x-3 transition-all ease-in-out duration-300">
+                            <p className="min-w-[5.4rem]">Check the whitepaper</p>
+                        </button>
+                    </a>
                 </div>
             </div>
 
