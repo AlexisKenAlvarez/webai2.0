@@ -45,12 +45,15 @@ const Partners = () => {
             <div className="flex flex-wrap gap-5 max-w-[905px] mx-auto mt-16 justify-center items-center">
                 {partnerList.map((items, i) => {
                     return (
-                        <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="w-[18rem] h-[5rem]`  cursor-pointer transition-shadow ease-in-out duration-300 rounded-md gap-x-3 relative flex items-center justify-center py-4 group hover:shadow-md" key={i}>
-                            <div className="w-full h-full absolute top-0 left-0 glassPartner rounded-md border-[1px] border-black"></div>
+                        <a href={items.link} target="_blank" className="" rel="noopener noreferrer" key={i}>
+                            <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="w-[18rem] h-[5rem]`  cursor-pointer transition-shadow ease-in-out duration-300 rounded-md gap-x-3 relative flex items-center justify-center py-4 group hover:shadow-md">
+                                <div className="w-full h-full absolute top-0 left-0 glassPartner rounded-md border-[1px] border-black"></div>
 
-                            <img src={`/partners/${items.image}.webp`} alt={items.image} className={`group-hover:scale-[1.1] transition-all ease-in-out duration-300 z-10 w-[2.5rem] ${items.image === "dexview" ? "invert" : items.image === "bitmart" ? "invert" : ''}`} />
-                            <h3 className='capitalize font-bold text-2xl relative z-10 '>{items.image}</h3>
-                        </motion.div>
+                                <img src={`/partners/${items.image}.webp`} alt={items.image} className={`group-hover:scale-[1.1] transition-all ease-in-out duration-300 z-10 w-[2.5rem] ${items.image === "dexview" ? "invert" : items.image === "bitmart" ? "invert" : ''}`} />
+                                <h3 className='capitalize font-bold text-2xl relative z-10 '>{items.image}</h3>
+                            </motion.div>
+                        </a>
+
                     )
                 })}
             </div>
