@@ -53,7 +53,7 @@ const Hero = () => {
     const arr = word.split("")
 
     return (
-        <motion.section initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.5}} key="IntroKey" className='w-full h-screen bg-subtleblack relative'>
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} key="IntroKey" className='w-full h-screen bg-subtleblack relative'>
             <Particle />
 
             <AnimatePresence>

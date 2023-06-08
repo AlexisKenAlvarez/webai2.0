@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <div className="font-poppins">
+      <div className="font-poppins w-full">
         <AnimatePresence mode="wait">
           <Routes key={location.pathname} location={location}>
             <Route path="/" element={<Intro />}></Route>

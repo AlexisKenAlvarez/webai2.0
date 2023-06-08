@@ -14,10 +14,6 @@ const NavMobile = ({ close }) => {
             slug: '/'
         },
         {
-            label: 'ecosystem',
-            slug: '/ecosystem'
-        },
-        {
             label: 'tokenomics',
             slug: '/tokenomics'
         },
