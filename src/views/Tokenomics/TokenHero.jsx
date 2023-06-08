@@ -53,7 +53,7 @@ const TokenHero = () => {
     const arr = word.split("")
 
     return (
-        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className='w-full h-screen bg-[#F3F7F6] relative'>
+        <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className='w-full h-screen bg-subtleblack relative'>
             <Particle />
 
             <AnimatePresence>
@@ -61,7 +61,7 @@ const TokenHero = () => {
                     <motion.div exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="relative z-10 h-full w-full transition-opacity duration-500 ease-in-out" key="mainDiv">
 
                         <motion.div initial={{ scale: 1.1, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.8 }} className="w-fit h-fit fixed left-0 right-0 bottom-0 m-auto pointer-events-none z-10">
-                            <img src="/token.webp" alt="Hero" className="relative m-auto lg:w-[75vh] w-[60vh] z-10"
+                            <img src="/logo.webp" alt="Hero" className="relative m-auto lg:w-[70vh] w-[60vh] z-10"
                                 style={{ transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)` }} />
                         </motion.div>
 
@@ -74,7 +74,7 @@ const TokenHero = () => {
                                         animate={{ opacity: 100 }}
                                         transition={{ duration: 1, delay: 0.7 + i * 0.1 }}
                                         key={i}
-                                        className="font-roboto text-myblack text-6xl sm:text-8xl  lg:text-[10rem] 2xl:text-[13rem] font-bold text-center lg:mt-[9rem] mt-[9rem]  select-none">{items}</motion.h1>
+                                        className="font-righteous text-mycyan text-5xl sm:text-7xl md:text-8xl  lg:text-[10rem] 2xl:text-[13rem] font-bold text-center lg:mt-[9rem] mt-[9rem]  select-none">{items}</motion.h1>
                                 )
                             })}
                         </section>

@@ -49,19 +49,19 @@ const Hero = () => {
     }, []);
 
 
-    const word = "WEBAI"
+    const word = "ChainMix"
     const arr = word.split("")
 
     return (
-        <motion.section initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.5}} key="IntroKey" className='w-full h-screen bg-mywhite relative'>
+        <motion.section initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{duration: 0.5}} key="IntroKey" className='w-full h-screen bg-subtleblack relative'>
             <Particle />
 
             <AnimatePresence>
                 {scrollPosition <= 170 ?
                     <motion.div exit={{ opacity: 0 }} transition={{ duration: 0.5 }} className="relative z-10 h-full w-full transition-opacity duration-500 ease-in-out" key="mainDiv">
 
-                        <motion.div initial={{ scale: 1.1, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.8 }} className="w-fit h-fit fixed left-0 right-0 bottom-7 m-auto pointer-events-none z-10">
-                            <img src="/hero.webp" alt="Hero" className="relative m-auto lg:w-[75vh] w-[65vh] z-10"
+                        <motion.div initial={{ scale: 1.1, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.8 }} className="w-fit h-fit fixed left-0 right-0 bottom-0 m-auto pointer-events-none z-10">
+                            <img src="/logo.webp" alt="Hero" className="relative m-auto lg:w-[70vh] w-[60vh] z-10"
                                 style={{ transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)` }} />
                         </motion.div>
 
@@ -74,7 +74,7 @@ const Hero = () => {
                                         animate={{ opacity: 100 }}
                                         transition={{ duration: 1, delay: 0.7 + i * 0.1 }}
                                         key={i}
-                                        className="font-roboto text-myblack text-8xl sm:text-9xl lg:text-[12rem] 2xl:text-[14rem] font-bold text-center lg:mt-[9rem] mt-[9rem]  select-none">{items}</motion.h1>
+                                        className="font-righteous text-mycyan text-5xl sm:text-7xl lg:text-[10rem] 2xl:text-[14rem] font-bold text-center lg:mt-[9rem] mt-[9rem]  select-none">{items}</motion.h1>
                                 )
                             })}
                         </section>

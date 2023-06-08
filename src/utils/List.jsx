@@ -114,7 +114,7 @@ export const levels = [
 
 export const febList = [
     {
-        label: 'Creaton of Web AI idea with the main concept.',
+        label: 'Creaton of ChainMix idea with the main concept.',
         done: true
     },
     {
@@ -122,11 +122,11 @@ export const febList = [
         done: true
     },
     {
-        label: 'Seed sale by team of Web AI token.',
+        label: 'Seed sale by team of ChainMix token.',
         done: true
     },
     {
-        label: 'Start of making socials for Web AI.',
+        label: 'Start of making socials for ChainMix.',
         done: true
     },
     {
@@ -138,7 +138,7 @@ export const febList = [
         done: false
     },
     {
-        label: '$WEBAI token fairlaunch on Pinksale platform.',
+        label: '$CHAINMIX token fairlaunch on Pinksale platform.',
         done: true
     },
     {
@@ -154,7 +154,7 @@ export const febList = [
         done: false
     },
     {
-        label: 'Start of listing Web AI SWAP on CMC',
+        label: 'Start of listing ChainMix SWAP on CMC',
         done: false
     },
     {
@@ -165,7 +165,7 @@ export const febList = [
 
 export const marchList = [
     {
-        label: 'Development of Web AI NFTs',
+        label: 'Development of ChainMix NFTs',
         done: false
     },
     {
@@ -173,7 +173,7 @@ export const marchList = [
         done: false
     },
     {
-        label: 'Web AI NFTs listing on one of the biggest exchanges',
+        label: 'ChainMix NFTs listing on one of the biggest exchanges',
         done: false
     },
     {
@@ -185,19 +185,19 @@ export const marchList = [
         done: false
     },
     {
-        label: 'Web AI NFTs listing on Opensea',
+        label: 'ChainMix NFTs listing on Opensea',
         done: false
     },
     {
-        label: 'Minting of Web AI NFTs',
+        label: 'Minting of ChainMix NFTs',
         done: false
     },
     {
-        label: 'Initial development of Web AI play 2 earn game WAPE',
+        label: 'Initial development of ChainMix play 2 earn game WAPE',
         done: false
     },
     {
-        label: 'Development of Web AI NFTs minting DAPP',
+        label: 'Development of ChainMix NFTs minting DAPP',
         done: false
     },
     {

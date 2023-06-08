@@ -17,13 +17,13 @@ const TokenContent = () => {
         }
     ]
     return (
-        <section className="w-full h-auto py-20 bg-secondarybg px-7">
+        <section className="w-full h-auto py-20 bg-subtleblack px-7">
             <EcoBox>
                 <div className="mt-5 w-full">
                     <div className="flex justify-between items-center w-full lg:flex-row flex-col text-center lg:text-left gap-y-10">
                         <div className="">
                             <AnimateText>
-                                <h3 className='text-pongkan font-semibold text-xl'>WEBAI Tokenomics</h3>
+                                <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl '>ChainMix Tokenomics</h3>
                             </AnimateText>
 
                             <AnimateDesc>
@@ -48,13 +48,13 @@ const TokenContent = () => {
                     </div>
                     <div className="mt-10 lg:text-left text-center">
                         <AnimateText>
-                            <h3 className='text-pongkan font-semibold text-xl'>WEBAI Token Taxes</h3>
+                            <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl'>ChainMix Token Taxes</h3>
                         </AnimateText>
 
                         <AnimateDesc>
                             <div className="flex flex-col gap-y-3 opacity-80 mt-5">
-                                <p className="">1% Further development of WebAI ecosystem</p>
-                                <p className="">2% Strategic marketing of WebAI token and ecosystem</p>
+                                <p className="">1% Further development of ChainMix ecosystem</p>
+                                <p className="">2% Strategic marketing of ChainMix token and ecosystem</p>
                             </div>
                             <p className="mt-5">NOTE: Since March 13th, the taxes have been set to 0/0 until further notice!</p>
                         </AnimateDesc>

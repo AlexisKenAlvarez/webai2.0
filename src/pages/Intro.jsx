@@ -7,6 +7,10 @@ import Partners from '../views/Intro/Partners'
 
 const Intro = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
 
         <>
