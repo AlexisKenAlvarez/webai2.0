@@ -18,18 +18,18 @@ const Nav = () => {
             label: 'intro',
             slug: '/'
         },
-        {
-            label: 'ecosystem',
-            slug: '/ecosystem'
-        },
+        // {
+        //     label: 'ecosystem',
+        //     slug: '/ecosystem'
+        // },
         {
             label: 'tokenomics',
             slug: '/tokenomics'
         },
-        {
-            label: 'P2E Game Deck',
-            slug: "/deck"
-        },
+        // {
+        //     label: 'P2E Game Deck',
+        //     slug: "/deck"
+        // },
         {
             label: 'roadmap',
             slug: '/roadmap'
@@ -56,6 +56,7 @@ const Nav = () => {
     }
 
     const open = () => {
+        console.log("OPEN")
         setActive(true)
     }
 
@@ -65,11 +66,13 @@ const Nav = () => {
 
 
     return (
-        <nav className='flex items-center p-3 px-6 lg:justify-between left-0 top-0 w-full z-[30] fixed pointer-events-none'>
+        <nav className='flex items-center p-3 px-6 lg:justify-between left-0 top-0 w-full z-30 fixed  text-white'>
             <AnimatePresence>
                 {navActive ? <NavMobile close={close} key="NavMobile" /> : null}
             </AnimatePresence>
-            <img src="/logo.webp" alt="Logo" className="w-20 cursor-pointer pointer-events-auto" />
+            <div className="lg:w-[10rem]">
+                <img src="/logo.webp" alt="Logo" className="w-20 cursor-pointer pointer-events-auto" />
+            </div>
 
             <div className="">
                 <ul className="hidden uppercase font-ginger gap-x-9 text-sm lg:flex pointer-events-auto">
@@ -83,13 +86,18 @@ const Nav = () => {
                                         transition={{ duration: 0.5, delay: i * 0.2 }}
                                         exit={{ opacity: 0 }}
                                         onClick={() => { handleNavigate(items.slug) }}
-                                        style={location.pathname === items.slug ? { color: "#f86449" } : {}}
+                                        style={location.pathname === items.slug ? {
+                                            backgroundImage: "linear-gradient(to bottom right, #2BCFED, #E813CA)",
+                                            WebkitBackgroundClip: "text",
+                                            WebkitTextFillColor: "transparent"
+                                        } : {}}
                                     >
 
-                                        <li className='transition-width ease-in-out duration-300 group-hover:text-pongkan'>
+                                        <li className='transition-width group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-br from-mycyan to-mypink'>
                                             {items.label}
                                         </li>
-                                        <div className="group-hover:w-[70%] mx-auto h-[3px] bg-[#f86449] mt-2 w-0 transition-width ease-in-out duration-300 opacity-0 group-hover:opacity-100" style={location.pathname === items.slug ? { opacity: "100", width: "70%" } : {}}></div>
+
+                                        <div className="group-hover:w-[70%] mx-auto h-[3px] bg-mycyan mt-2 w-0 transition-width ease-in-out duration-300 opacity-0 group-hover:opacity-100" style={location.pathname === items.slug ? { opacity: "100", width: "70%" } : {}}></div>
                                     </motion.div>
                                     : null
                             )
@@ -99,13 +107,13 @@ const Nav = () => {
                 </ul>
             </div>
             <a href="" target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
-                <button className="bg-myblack text-white rounded-md h-11 w-[10rem] justify-center font-ginger lg:text-sm text-xs justify-self-start ml-4 lg:ml-0 flex items-center gap-x-3 transition-all ease-in-out duration-300" style={scroll >= 100 ? { width: "4rem" } : {}}>
+                <button className="bg-myblack text-white rounded-md h-11 w-[10rem] justify-center font-ginger lg:text-sm text-xs justify-self-start ml-4 lg:ml-0 flex items-center gap-x-3 transition-all ease-in-out duration-300 " style={scroll >= 100 ? { width: "4rem" } : {}}>
                     <p style={scroll >= 100 ? { opacity: 0, display: "none" } : {}} className="min-w-[5.4rem]">BUY TOKEN</p>
                     <GiToken className='text-xl' />
                 </button>
             </a>
 
-            <GiHamburgerMenu className='lg:hidden text-3xl ml-auto drop-shadow-whiteShad ' onClick={open} />
+            <GiHamburgerMenu className='lg:hidden text-3xl ml-auto drop-shadow-whiteShad' onClick={open} />
 
         </nav >
     )

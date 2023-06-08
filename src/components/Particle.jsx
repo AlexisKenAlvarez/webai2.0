@@ -52,10 +52,10 @@ const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: mode === 'dark' ? "#111111" : "#ffffff",
+                        value: "#fffff",
                     },
                     links: {
-                        color: mode === 'dark' ? "#ffffff" : "#111111",
+                        color: "#2BCFED",
                         distance: 200,
                         enable: true,
                         opacity: 0.5,
