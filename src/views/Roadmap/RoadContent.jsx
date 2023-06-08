@@ -27,12 +27,12 @@ const RoadContent = () => {
         <div className='w-full min-h-screen h-auto lg:h-screen z-10 relative bg-subtleblack' ref={ref}>
             {/* <motion.div className="w-full fixed top-0 left-0 h-screen bg-subtleblack" style={{ opacity }}></motion.div> */}
             <Particle />
-            <div className="w-full absolute lg:h-screen h-auto mt-20 lg:mt-0 pb-9 z-10 flex items-center justify-center pointer-events-none flex-col gap-x-11 lg:flex-row gap-y-32 px-4">
+            <div className="w-full absolute lg:h-screen bg-subtleblack lg:bg-transparent b h-auto mt-20 lg:mt-0 pb-9 z-10 flex items-center justify-center pointer-events-none flex-col gap-x-11 lg:flex-row gap-y-32 px-4">
                 <RoadmapTemplate title="FEB 2023" list={febList} />
                 <RoadmapTemplate title="MAR 2023" list={marchList} />
 
             </div>
-            <Canvas className='w-full h-screen' id="canvas" shadows>
+            <Canvas className='w-full h-screen bg-sublteblack' id="canvas" shadows>
                 <Suspense fallback={null}>
                     <GlobeComp />
                 </Suspense>
