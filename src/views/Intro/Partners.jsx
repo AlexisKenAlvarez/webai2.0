@@ -63,7 +63,7 @@ const Partners = () => {
 
                 <div className="">
                     <div className="overflow-hidden">
-                        <motion.h1 initial={{ opacity: 0 }} whileInView={{ y: [30, 0], opacity: 1 }} transition={{ duration: 0.7, ease: [.17, .60, .50, 1] }} className='md:text-6xl text-3xl max-w-[30rem] text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold'>LOREM PARTNERSHIP</motion.h1>
+                        <motion.h1 initial={{ opacity: 0 }} whileInView={{ y: [30, 0], opacity: 1 }} transition={{ duration: 0.7, ease: [.17, .60, .50, 1] }} className='md:text-6xl text-3xl max-w-[30rem] text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold mx-auto lg:mx-0'>LOREM PARTNERSHIP</motion.h1>
                     </div>
 
                     <div className="overflow-hidden">

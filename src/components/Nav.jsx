@@ -107,7 +107,7 @@ const Nav = () => {
                 </ul>
             </div>
             <a href="" target="_blank" rel="noopener noreferrer" className="pointer-events-auto">
-                <button className="bg-myblack text-white rounded-md h-11 w-[10rem] justify-center font-ginger lg:text-sm text-xs justify-self-start ml-4 lg:ml-0 flex items-center gap-x-3 transition-all ease-in-out duration-300 " style={scroll >= 100 ? { width: "4rem" } : {}}>
+                <button className="bg-myblack text-white rounded-md h-11 w-[10rem] justify-center font-ginger lg:text-sm text-xs justify-self-start ml-4 lg:ml-0 flex items-center gap-x-3 transition-all ease-in-out duration-300 border-[1px] border-white/10" style={scroll >= 100 ? { width: "4rem" } : {}}>
                     <p style={scroll >= 100 ? { opacity: 0, display: "none" } : {}} className="min-w-[5.4rem]">BUY TOKEN</p>
                     <GiToken className='text-xl' />
                 </button>

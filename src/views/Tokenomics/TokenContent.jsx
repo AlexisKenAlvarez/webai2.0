@@ -23,7 +23,7 @@ const TokenContent = () => {
                     <div className="flex justify-between items-center w-full lg:flex-row flex-col text-center lg:text-left gap-y-10">
                         <div className="">
                             <AnimateText>
-                                <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl '>ChainMix Tokenomics</h3>
+                                <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl mx-auto lg:mx-0'>ChainMix Tokenomics</h3>
                             </AnimateText>
 
                             <AnimateDesc>
@@ -48,7 +48,7 @@ const TokenContent = () => {
                     </div>
                     <div className="mt-10 lg:text-left text-center">
                         <AnimateText>
-                            <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl'>ChainMix Token Taxes</h3>
+                            <h3 className='text-transparent bg-clip-text bg-gradient-to-br w-fit from-mycyan to-mypink font-bold text-xl mx-auto lg:mx-0'>ChainMix Token Taxes</h3>
                         </AnimateText>
 
                         <AnimateDesc>
