@@ -114,95 +114,71 @@ export const levels = [
 
 export const febList = [
     {
-        label: 'Creaton of ChainMix idea with the main concept.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Development of website, whitepaper and its ecosystem of WebAI.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Seed sale by team of ChainMix token.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Start of making socials for ChainMix.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Development of the main ecosystem components.',
-        done: false
-    },
-    {
-        label: 'Competitions and giveaways for community building and engagement.',
-        done: false
-    },
-    {
-        label: '$CHAINMIX token fairlaunch on Pinksale platform.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Preparation of high tier CEX listing.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Conducting main listings for $WEBAI token.',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
     {
-        label: 'Partnerships',
-        done: false
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        done: true
     },
     {
-        label: 'Start of listing ChainMix SWAP on CMC',
-        done: false
-    },
-    {
-        label: 'Launch of $WEBAI token on Pancakeswap and CEX',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: true
     },
 ]
 
 export const marchList = [
     {
-        label: 'Development of ChainMix NFTs',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'Massive trending campaings',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'ChainMix NFTs listing on one of the biggest exchanges',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'Development of unique WebAI NFT staking pool',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'Competition of NFT Whitelist spots',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'ChainMix NFTs listing on Opensea',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
     },
     {
-        label: 'Minting of ChainMix NFTs',
+        label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         done: false
-    },
-    {
-        label: 'Initial development of ChainMix play 2 earn game WAPE',
-        done: false
-    },
-    {
-        label: 'Development of ChainMix NFTs minting DAPP',
-        done: false
-    },
-    {
-        label: 'Further partnerships',
-        done: false
-    },
-    
+    }
+
 ]
