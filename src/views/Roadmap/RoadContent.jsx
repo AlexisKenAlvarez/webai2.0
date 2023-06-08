@@ -32,7 +32,7 @@ const RoadContent = () => {
                 <RoadmapTemplate title="MAR 2023" list={marchList} />
 
             </div>
-            <Canvas className='w-full h-screen bg-sublteblack' id="canvas" shadows>
+            <Canvas className='w-full h-screen bg-sublteblack lg:block hidden' id="canvas" shadows>
                 <Suspense fallback={null}>
                     <GlobeComp />
                 </Suspense>
